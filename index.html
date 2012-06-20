@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+  <article class="post clearfix">
+    <h1>
+      <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+      <div class="post-time">{{ post.date|date_to_string }}</div>
+    </h1>
+    {{ post.content|truncate:500}}
+    <br>
+    <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">Read more</a>
+  </article>
+  <hr>
+{% endfor %}
+
+<div class="pagination">
+  <span class="previous">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+      <a href="/index.html" title="Previous Page">&laquo; Previous</a>
+      {% else %}
+      <a href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a>
+      {% endif %}
+    {% endif %}
+  </span>
+  <span class="next">
+    {% if paginator.next_page %}
+    <a href="/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
+    {% endif %}
+  </span>
+</div>

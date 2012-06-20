@@ -1,0 +1,28 @@
+#content aside .aside-box {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  background: #eee;
+
+  color: #222;
+}
+
+#content aside .aside-box h2 {
+  margin: 0;
+
+  font-size: 18px;
+}
+
+#content aside .aside-box p {
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+#content aside .aside-box p img {
+  width: 150px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}

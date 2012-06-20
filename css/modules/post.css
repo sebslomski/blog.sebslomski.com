@@ -1,0 +1,93 @@
+.post blockquote,
+.post ol,
+.post p,
+.post ul {
+  display: block;
+  margin: 0 0 1.5em;
+}
+
+.post blockquote {
+  float: left;
+  width: 100%;
+
+  padding: 0 1.5em 0 1.4em;
+
+  border-left: 2px solid  #E4E4E4;
+
+  color: #919191;
+}
+
+.post code {
+  font: normal normal 87.5%/1.71428571em monospace,sans-serif;
+}
+
+.post img {
+  display: block;
+  margin: 1.5em auto;
+  max-width: 100%;
+  max-height: 500px;
+}
+
+.post pre {
+  display: block;
+  margin: 1.71428571em;
+
+  font: normal normal 87.5%/1.71428571em monospace,sans-serif;
+}
+
+.post h1 {
+  margin: 0 0 .1666em;
+
+  font-size: 30px;
+  line-height: 1.3334em;
+}
+
+.post h2 {
+  margin: 0 0 .35714286em;
+
+  font-size: 26px;
+  line-height: 1.28571429em;
+}
+
+.post h3 {
+  margin: 0 0 .5em;
+
+  font-size: 22px;
+  line-height: 1.3636em;
+}
+
+.post h4,
+.post h5,
+.post h6 {
+  margin: 0 0 .7778em;
+
+  font-size: 20px;
+  line-height: 1.3334em;
+}
+
+.post ol,
+.post ul {
+  clear: both;
+  padding: 0;
+
+  list-style-position: outside;
+}
+
+.post ol ol,
+.post ol ul,
+.post ul ol,
+.post ul ul {
+  margin: 0 0 .75em 2em;
+}
+
+.post h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+
+.post-time {
+  float: right;
+  padding-top: 6px;
+  font-size: 16px;
+}

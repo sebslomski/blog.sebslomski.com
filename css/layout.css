@@ -1,0 +1,86 @@
+/*
+ * Layout CSS selectors always start with `l-`
+ * */
+
+.l-container {
+  width: 100%;
+  float: left;
+}
+
+.l-grid {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.l-grid-column-3-1,
+.l-grid-column-3-2,
+.l-grid-column-2-1,
+.l-grid-row {
+  float: left;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.l-grid-column-3-1 {
+  width: 23.3%;
+}
+
+.l-grid-column-3-2 {
+  width: 56.6%;
+}
+
+.l-grid-column-2-1 {
+  width: 40%;
+}
+
+.l-grid-row {
+  width: 90%;
+}
+
+
+#content {
+  float: left;
+  margin: 60px 0;
+  z-index: 10;
+  position: relative;
+}
+
+
+#content h1 {
+  border-bottom: 1px dotted #c0c0c0;
+
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+#content h1 a {
+  text-decoration: none;
+  color: #222;
+}
+
+#content h1 a:hover {
+  color: #bbb;
+}
+
+#intro {
+  margin-top: 5px;
+  position: relative;
+}
+
+#intro img {
+  width: 100%;
+  padding: 0;
+  display: block;
+}
+
+#intro a {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  color: #222;
+}
+
+hr {
+  border-bottom: 1px dotted #c0c0c0;
+}

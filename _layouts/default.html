@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sebastian Slomski's Blog</title>
+    <meta charset="utf-8">
+
+    <!-- I didn't concatenate the files so you can have a look at my module structure -->
+
+    <link href='https://fonts.googleapis.com/css?family=Lustria' rel='stylesheet' type='text/css'>
+    <link href="/css/reset.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/animations.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/base.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/utils.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/layout.css" rel="stylesheet" type="text/css" media="all">
+
+    <link href="/css/modules/bar.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/modules/aside.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/modules/post.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="image_src" href="http://sebslomski.com/images/me-small.jpg">
+
+    <script src="/js/vendor/jquery-1.7.1.min.js"></script>
+    <script src="/js/vendor/jquery.lazyload.min.js"></script>
+
+    <script src="/js/app.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-31485350-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+  </head>
+  <body>
+    <div id="webcrawler-hint">
+      Hi, I'm Sebastian, a software engineer &amp; front-end architect from Munich, Germany,
+      specialised in building (mobile) web applications.<br>
+      I blog about web technology and my experiences about moving to London.
+    </div>
+
+    <header class="l-container bar">
+      <div class="l-grid clearfix">
+        <div class="l-grid-column-2-1 bar-logo">
+          <h1>
+            <a href="/">
+              Sebastian Slomski's Blog
+            </a>
+          </h1>
+        </div>
+        <nav class="l-grid-column-2-1 bar-links">
+          <ul class="bar-menu">
+            <li><a href="/atom.xml">RSS Feed</a></li>
+            <li><a href="http://sebslomski.com">My website</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <section id="intro" class="l-grid">
+        <img src="/images/lazyload.jpg" data-original="/images/london.jpg" alt="London" class="lazy">
+        <a href="http://www.flickr.com/photos/_dchris/">Photo by Christian Lendl</a>
+      </section>
+    </header>
+
+    <div id="content" class="fade l-container">
+      <div class="l-grid">
+        <section class="l-grid-column-3-2">
+          {{ content }}
+        </section>
+        <aside class="l-grid-column-3-1">
+          <div class="aside-box">
+            <h2>About me</h2>
+            <p>
+              <a href="http://sebslomski.com" target="_blank">
+                <img src="/images/me-avatar.jpg" alt="Sebastian Slomski">
+              </a>
+              Hi, I'm Sebastian, a software engineer &amp; front-end architect living in London, UK,
+              specialised in building (mobile) web applications.<br>
+              I blog about web technology and my experiences about moving to London.<br>
+              <a href="http://sebslomski.com" target="_blank">Read more about me</a>
+            </p>
+          </div>
+
+          <div class="aside-box">
+            <h2>Recent posts</h2>
+            <ul>
+              {% for post in site.posts limit:5 %}
+              <li>
+                <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <footer class="l-container bar">
+      <div class="l-grid">
+        <div class="l-grid-column-2-1">
+          <a class="bar-copyright" href="mailto:me@sebslomski.com">&copy; 2012 Sebastian Slomski. Feel free to copy</a>
+        </div>
+        <div class="l-grid-column-2-1 bar-links">
+          <ul class="bar-social hidden">
+            <li><a class="bar-social-twitter" href="http://twitter.com/sebslomski">Twitter</a></li>
+            <li><a class="bar-social-github" href="http://github.com/sebslomski">Github</a></li>
+            <li><a class="bar-social-xing" href="http://sebslomski.com/xing">Xing</a></li>
+            <li><a class="bar-social-linkedin" href="http://sebslomski.com/linkedin">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

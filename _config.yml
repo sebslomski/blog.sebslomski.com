@@ -1,0 +1,11 @@
+permalink: /:categories/:year/:month/:day/:title
+
+title: Sebastian Slomski's Blog
+author:
+  name: Sebastian Slomski
+  email: me@sebslomski.com
+  github: sebslomski
+  twitter: sebslomski
+
+production_url: http://blog.sebslomski.com
+paginate: 5

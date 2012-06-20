@@ -1,0 +1,187 @@
+/*
+ * Only HTML elements as css selectors
+ * */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+  color: #525252;
+  font-size: 16px;
+  line-height: 2;
+  font-family: 'Lustria', 'Georgia', serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+h1, h2, h3, h4 {
+  margin: 20px 0 10px;
+
+  color: #222;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  margin-bottom: 0;
+
+  font-size: 20px;
+}
+
+h3 {
+  margin-bottom: 0;
+
+  font-size: 18px;
+}
+
+h4 {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  width: 100%;
+  float: left;
+  margin: 10px 0;
+}
+
+ul {
+  margin: 10px 0;
+}
+
+ul li {
+  margin-left: 25px;
+
+  list-style: disc;
+}
+
+input, textarea {
+  padding: 5px;
+
+  border: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0px 1px 1px #a5a5a5;
+  -moz-box-shadow: inset 0px 1px 1px #a5a5a5;
+  -o-box-shadow: inset 0px 1px 1px #a5a5a5;
+  -ms-box-shadow: inset 0px 1px 1px #a5a5a5;
+  box-shadow: inset 0px 1px 1px #a5a5a5;
+
+  background: #e7e7e7;
+
+  font-size: 16px;
+}
+
+input:focus, textarea:focus {
+  background: #fff;
+
+  outline: none;
+}
+
+a {
+  color: #369;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+
+ul.styled {
+  float: left;
+}
+
+ul.styled li {
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  margin-left: 0;
+  display: block;
+  float: left;
+  width: 100%;
+
+  border-bottom: 1px dashed #bbb;
+
+  list-style: none;
+}
+
+ul.styled li h4 {
+  float: left;
+  width: 30%;
+}
+
+ul.styled li > div {
+  float: left;
+  width: 70%;
+}
+
+img.right {
+  float: right;
+  display: block;
+}
+
+acronym {
+  cursor: help;
+  border-bottom: 1px dotted #c0c0c0;
+}
+
+
+ul.tabular {
+  display: table;
+}
+
+ul.tabular li {
+  margin: 0;
+  display: table-row;
+
+  list-style: none;
+}
+
+ul.tabular li span {
+  display: table-cell;
+  padding-left: 10px;
+  padding-bottom: 5px;
+
+  line-height: 1.5;
+}
+
+ul.tabular li span:first-child {
+  width: 35%;
+  padding-left: 0;
+
+  font-style: italic;
+}
+
+#webcrawler-hint {
+  display: none;
+}
+
+hr {
+  display: block;
+  width: 100%;
+}
+
+em {
+  font-style: italic;
+}
